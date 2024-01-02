@@ -1,0 +1,20 @@
+public class Airport {
+    private String airportCode;
+    private String location;
+    private int runways;
+    private String facilities;
+
+    public Airport(String airportCode, String location) {
+        this.airportCode = airportCode;
+        this.location = location;
+    }
+
+    public boolean checkRunwayAvailability() {
+        // Simplified logic, actual implementation may vary
+        return runways > 0;
+    }
+
+    public String getFacilities() {
+        return facilities;
+    }
+}
