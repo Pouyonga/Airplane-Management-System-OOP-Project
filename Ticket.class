@@ -1,0 +1,9 @@
+public class Ticket {
+    private String ticketNumber;
+    private Passenger passenger;
+    private Flight flight;
+    private String seatNumber;
+    private double price;
+
+    // Constructor, getters, and setters can be added based on requirements
+}
