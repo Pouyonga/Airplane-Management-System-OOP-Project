@@ -1,0 +1,21 @@
+public class Crew {
+    private String crewID;
+    private String name;
+    private String role;
+    private String schedule;
+
+    public Crew(String crewID, String name, String role) {
+        this.crewID = crewID;
+        this.name = name;
+        this.role = role;
+    }
+
+    public void assignToFlight(Flight flight) {
+        System.out.println(name + " assigned to " + flight.getFlightNumber());
+    }
+
+    public void updateSchedule(String newSchedule) {
+        this.schedule = newSchedule;
+        System.out.println(name + "'s schedule updated to " + newSchedule);
+    }
+}
