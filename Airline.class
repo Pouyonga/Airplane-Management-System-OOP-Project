@@ -1,0 +1,31 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Airline {
+    private String airlineName;
+    private List<Airplane> fleet;
+    private List<Flight> flights;
+    private String headquarters;
+
+    public Airline(String airlineName, String headquarters) {
+        this.airlineName = airlineName;
+        this.headquarters = headquarters;
+        this.fleet = new ArrayList<>();
+        this.flights = new ArrayList<>();
+    }
+
+    public void addAirplane(Airplane airplane) {
+        fleet.add(airplane);
+        System.out.println("Airplane " + airplane.getStatus() + " added to " + airlineName + "'s fleet");
+    }
+
+    public void addFlight(Flight flight) {
+        flights.add(flight);
+        System.out.println("Flight " + flight.getFlightNumber() + " added to " + airlineName + "'s schedule");
+    }
+
+    public void removeFlight(Flight flight) {
+        flights.remove(flight);
+        System.out.println("Flight " + flight.getFlightNumber() + " removed from " + airlineName + "'s schedule");
+    }
+}
