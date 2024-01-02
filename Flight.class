@@ -1,0 +1,30 @@
+public class Flight {
+    private String flightNumber;
+    private String departureAirport;
+    private String destinationAirport;
+    private String departureTime;
+    private String arrivalTime;
+
+    public Flight(String flightNumber, String departureAirport, String destinationAirport,
+                  String departureTime, String arrivalTime) {
+        this.flightNumber = flightNumber;
+        this.departureAirport = departureAirport;
+        this.destinationAirport = destinationAirport;
+        this.departureTime = departureTime;
+        this.arrivalTime = arrivalTime;
+    }
+
+    public boolean checkAvailability() {
+        // Simplified logic, actual implementation may vary
+        return true;
+    }
+
+    public void bookTicket(Passenger passenger, String seatNumber) {
+        // Simplified logic, actual implementation may involve creating a Ticket object
+        System.out.println(passenger.getName() + " booked a ticket for " + flightNumber + " with seat " + seatNumber);
+    }
+
+    public String getFlightNumber() {
+        return flightNumber;
+    }
+}
