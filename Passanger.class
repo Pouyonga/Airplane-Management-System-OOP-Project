@@ -1,0 +1,27 @@
+public class Passenger {
+    private String passengerID;
+    private String name;
+    private String seatNumber;
+    private String bookingInfo;
+
+    public Passenger(String passengerID, String name) {
+        this.passengerID = passengerID;
+        this.name = name;
+    }
+
+    public void bookSeat(String seatNumber) {
+        this.seatNumber = seatNumber;
+        this.bookingInfo = "Booked";
+        System.out.println(name + " booked seat " + seatNumber);
+    }
+
+    public void cancelBooking() {
+        this.seatNumber = null;
+        this.bookingInfo = "Cancelled";
+        System.out.println(name + "'s booking is cancelled");
+    }
+
+    public String getName() {
+        return name;
+    }
+}
