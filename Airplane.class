@@ -1,0 +1,24 @@
+public class Airplane {
+    private String airplaneID;
+    private String model;
+    private int capacity;
+    private String currentLocation;
+    private String status;
+
+    public Airplane(String airplaneID, String model, int capacity) {
+        this.airplaneID = airplaneID;
+        this.model = model;
+        this.capacity = capacity;
+        this.currentLocation = "Unknown";
+        this.status = "Idle";
+    }
+
+    public void moveTo(String destination) {
+        System.out.println("Moving " + airplaneID + " to " + destination);
+        this.currentLocation = destination;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+}
